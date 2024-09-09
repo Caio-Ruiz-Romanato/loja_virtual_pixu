@@ -2,11 +2,7 @@ package devpixulojavirtual.loja_pixu_virtual.model;
 
 import java.io.Serializable;
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.GenerationType;
-import jakarta.persistence.Id;
-import jakarta.persistence.SequenceGenerator;
+import jakarta.persistence.*;
 
 
 @Entity
@@ -19,7 +15,7 @@ public class MarcaProduto implements Serializable {
     @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "seq_marca_produto")
     private Long id;
 
-
+    @Column(name = "nome_decricao", nullable = false)
     private String nomeDesc;
 
 

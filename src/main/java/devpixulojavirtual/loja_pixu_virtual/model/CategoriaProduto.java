@@ -7,7 +7,7 @@ import java.util.Objects;
 
 @Entity
 @SequenceGenerator(name = "seq_categoria_produto", sequenceName = "seq_categoria_produto", allocationSize = 1, initialValue = 1)
-public class Categoria_produto implements Serializable{
+public class CategoriaProduto implements Serializable{
 
     private static final long serialVersionUID = 1L;
 
@@ -38,7 +38,7 @@ public class Categoria_produto implements Serializable{
     public boolean equals(Object o) {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
-        Categoria_produto that = (Categoria_produto) o;
+        CategoriaProduto that = (CategoriaProduto) o;
         return Objects.equals(id, that.id);
     }
 

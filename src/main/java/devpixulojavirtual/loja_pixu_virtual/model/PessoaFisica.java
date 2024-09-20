@@ -5,6 +5,7 @@ import java.util.Date;
 import jakarta.persistence.*;
 
 @Entity
+@Table(name = "pessoa_fisica")
 @SequenceGenerator(name = "seq_fisica", sequenceName = "seq_fisica", initialValue = 1, allocationSize = 1)
 public class PessoaFisica extends Pessoa {
 

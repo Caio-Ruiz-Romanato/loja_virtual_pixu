@@ -3,6 +3,7 @@ package devpixulojavirtual.loja_pixu_virtual.model;
 import jakarta.persistence.*;
 
 @Entity
+@Table(name = "pessoa_juridica")
 public class PessoaJuridica extends Pessoa {
 
     private static final long serialVersionUID = 1L;

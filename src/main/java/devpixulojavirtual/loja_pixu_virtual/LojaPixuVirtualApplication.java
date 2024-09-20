@@ -10,5 +10,4 @@ public class LojaPixuVirtualApplication {
         SpringApplication.run(LojaPixuVirtualApplication.class, args);
     }
 
-    
 }
